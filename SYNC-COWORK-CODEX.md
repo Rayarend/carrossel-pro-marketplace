@@ -36,4 +36,4 @@ A MESMA pasta `plugins/carrossel-pro/` serve os dois — ela tem os DOIS manifes
    - `carrossel-pro-codex-skill.zip`  (pasta da skill p/ ~/.codex/skills)
    - `carrossel-pro-codex-plugin.zip` (plugin completo c/ .codex-plugin)
 
-## Versão atual: 1.9.2  (editor com IA Gemini, autosave por carrossel, nº gigante em todos os slides)
+## Versão atual: 1.9.3  (biblioteca de imagens para carrosséis)

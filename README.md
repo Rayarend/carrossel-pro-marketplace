@@ -21,6 +21,10 @@ Marketplace de plugin pro **Claude Cowork / Claude Code**. Instala a habilidade 
 
 Depois de instalar, peca: **"cria um carrossel sobre X"**. A habilidade conduz as perguntas, escreve a copy e entrega o `carrossel-editor.html` ja preenchido. Abra no navegador, ajuste e clique em **Exportar ZIP**.
 
+### Biblioteca de imagens
+
+O plugin inclui [174 imagens WebP para fundos de carrosséis](plugins/carrossel-pro/skills/carrossel-pro/assets/imagens/README.md), organizadas em `xamanismo/` e `terapias/`. No editor, selecione um slide e envie a imagem pelo painel **Imagem de fundo**. As imagens são horizontais; ajuste o enquadramento para slides verticais.
+
 ---
 
 ## Para o mantenedor (atualizar o plugin)

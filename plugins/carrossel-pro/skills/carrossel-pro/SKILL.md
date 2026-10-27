@@ -58,6 +58,8 @@ Consulte `references/01-descoberta-marca.md`. Faça as 5 perguntas obrigatórias
 ### FASE 2 — Sistema visual [VALIDAR]
 Consulte `references/02-kits-tipograficos.md`. Pelo arquétipo + mood, recomende UM dos 8 kits, com justificativa curta + 1-2 alternativas. Se o usuário pedir "me mostra", gere mockups do slide capa com os kits candidatos. Depois feche: paleta (parta da do kit e ajuste à marca) e se haverá fotos ou só tipografia.
 
+Se houver fotos, considere a biblioteca opcional em `assets/imagens/` (`xamanismo/` e `terapias/`), quando o tema combinar com a marca. Consulte `assets/imagens/README.md`. As imagens são horizontais; confira o enquadramento nos slides verticais. O usuário também pode escolher qualquer WebP no painel **Imagem de fundo** do editor.
+
 Pergunte também sobre o **logo**: "Quer colocar o logo da sua marca nos slides? Se sim, me envia o arquivo (PNG com fundo transparente é o ideal, mas SVG/JPG também servem)." Se o usuário enviar, salve o arquivo e use no JSON (campo `logo`). Pergunte se ele prefere o logo **só na capa** ou como **marca d'água em todos os slides**, e se o logo é claro (precisa inverter nos slides de fundo claro). Detalhes em `references/05-template-html.md`.
 
 ### FASE 3 — Voz de marca [VALIDAR]
@@ -92,6 +94,7 @@ Você NÃO depende de scripts pra renderizar: a entrega é o **Carousel Studio**
 1. Monte o `slides.json` (formato do editor — ver `references/05-template-html.md`):
    - Topo: `{ "kit", "formato" ("4:5"|"1:1"|"9:16"), "paleta": {bg,fg,muted,accent,surface,cream}, "handle", "slides": [...] }`
    - Slides por `tipo`: `capa` {kicker, titulo, sub, ghost?}, `passo` {titulo, corpo, ghost?, breather?}, `insight` {texto, fonte?}, `lista` {titulo, itens[]}, `stat` {numero, rotulo, corpo}, `cta` {titulo, acao, sub}.
+   - Para já preencher um fundo com imagem da biblioteca, leia o WebP selecionado e use uma URI de dados `data:image/webp;base64,...` no campo `bg_uri` do slide. Não use caminho local nem link do Drive, pois o editor entregue deve funcionar offline.
 
 2. Pegue o editor embutido `assets/carousel-studio.html` e **injete** o `slides.json` dentro do bloco vazio `<script id="deck-data" type="application/json"></script>`. Salve na pasta de saída do usuário como `carrossel-editor.html`. Exemplo (Python):
    ```python
