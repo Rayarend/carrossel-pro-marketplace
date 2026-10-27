@@ -21,6 +21,8 @@ Marketplace de plugin pro **Claude Cowork / Claude Code**. Instala a habilidade 
 
 Depois de instalar, peca: **"cria um carrossel sobre X"**. A habilidade conduz as perguntas, escreve a copy e entrega o `carrossel-editor.html` ja preenchido. Abra no navegador, ajuste e clique em **Exportar ZIP**.
 
+Para carrosséis do perfil `@xama.pena.azul.do.amor`, há uma [referência de marca fornecida por Ray Arend](examples/xama/README.md).
+
 ---
 
 ## Para o mantenedor (atualizar o plugin)
